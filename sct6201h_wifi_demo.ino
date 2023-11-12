@@ -138,7 +138,6 @@ void loop()
 
   prepareTxFrame(0);
   // Publish a message
-  // client.publish("esp32/test", jsonData.c_str());
 
   client.publish("esp32/test", base64Encoded.c_str());
   delay(500); // Send a message every 5 seconds
